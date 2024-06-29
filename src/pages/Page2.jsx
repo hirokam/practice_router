@@ -6,16 +6,14 @@ export const Page2 = () => {
   return (
     <div>
       <h1>Page2ページです</h1>
-      <nav>
-        <ul className="ul">
-          <li className="list">
-            <Link to={`${userId}`}>URL Parameter</Link>
-          </li>
-          <li className="list">
-            <Link to={`${userId}?username=${userName}`}>Query Parameter</Link>
-          </li>
-        </ul>
-      </nav>
+      <ul className="ul">
+        <li>
+          <Link to={`${userId}`}>URL Parameter</Link>
+        </li>
+        <li>
+          <Link to={`${userId}?username=${userName}`}>Query Parameter</Link>
+        </li>
+      </ul>
     </div>
   );
 };
